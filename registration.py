@@ -31,7 +31,7 @@ def UpdateFrom():
         k7 = cb.get()  # 4 city
         k8 = var.get()  # 8 gender
         import pymysql as sql
-        db = sql.connect(host='localhost', user='root', password='sonu#7535', db='data')
+        db = sql.connect(host='localhost', user='root', password='YOUR_PASSWORD', db='data')
         cur = db.cursor()
         s="update registration set Name=%s,Lastname=%s,Contact=%s,City=%s,Password=%s,Date=%s,Gender=%s where Email=%s"
 
@@ -141,7 +141,7 @@ def Search():
     for i in tv.get_children():
         tv.delete(i)
     import pymysql as sql
-    db = sql.connect(host='localhost', user='root', password='sonu#7535', db='data')
+    db = sql.connect(host='localhost', user='root', password='YOUR_PASSWORD', db='data')
     cur = db.cursor()
     p = "select * from registration where name=%s"
     cur.execute(p,k)
@@ -168,7 +168,7 @@ def show():
     for i in tv.get_children():
         tv.delete(i)
     import pymysql as sql
-    db = sql.connect(host='localhost', user='root', password='sonu#7535', db='data')
+    db = sql.connect(host='localhost', user='root', password='YOUR_PASSWORD', db='data')
     cur = db.cursor()
     p = "select * from registration"
     cur.execute(p)
@@ -189,7 +189,7 @@ def show():
 def Delete():
     k = e1.get()
     import pymysql as sql
-    db = sql.connect(host='localhost', user='root', password='sonu#7535', db='data')
+    db = sql.connect(host='localhost', user='root', password='YOUR_PASSWORD', db='data')
     cur = db.cursor()
     s = "delete from registration where name=%s"
     result = cur.execute(s, k)
@@ -216,7 +216,7 @@ def Insert():
     k8=var.get() # 8 gendear
 
     import pymysql as sql
-    db=sql.connect(host="localhost",user="root",passwd="sonu#7535",db="data")
+    db=sql.connect(host="localhost",user="root",passwd="YOUR_PASSWORD",db="data")
     cur=db.cursor()
     s="Insert into registration values('%s','%s','%s','%s','%s','%s','%s','%s')"%(k,k2,k3,k7,k5,k6,n,k8)
     result=cur.execute(s)
