@@ -59,7 +59,7 @@ CREATE TABLE registration (
 4. Update the MySQL username and password in the source code.
 5. Run:
 
-2## Login System using Python Tkinter & MySQL
+## 2 Login System using Python Tkinter & MySQL
 
 A simple Login System built with Python Tkinter and MySQL. The application authenticates users by verifying their username and password from a MySQL database.
 
