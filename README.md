@@ -59,14 +59,4 @@ CREATE TABLE registration (
 4. Update the MySQL username and password in the source code.
 5. Run:
 
-```bash
-python main.py
-```
 
-## Screenshots
-
-Add screenshots of the application here.
-
-## Author
-
-Your Name
