@@ -12,7 +12,7 @@ top.resizable(0,0)
 
 def loginFetch():
     import pymysql as sql
-    db = sql.connect(host='localhost', user='root', password='sonu#7535', db='data')
+    db = sql.connect(host='localhost', user='root', password='YOUR_PASSWORD', db='data')
     cur = db.cursor()
     cur.execute("select * from registration where name=%s and password=%s",(e1.get(),e2.get()))
     row=cur.fetchone()
